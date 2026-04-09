@@ -95,3 +95,11 @@ input[type="submit"]:hover {
 .pseudo-list li:nth-child(even) {
     background-color: white;
 }
+
+.filter-image {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+.filter-image:hover {
+    filter: grayscale(0%);
+}
