@@ -1,1 +1,0 @@
-Tämä on workshop 2 kansio
