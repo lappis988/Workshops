@@ -1,6 +1,6 @@
 p {
     color: black;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
 }
 body {
     background-color: lightgrey;
@@ -41,7 +41,7 @@ th {
     background-color: #f2f2f2;
 }
 form {
-    display: ruby;
+    display: flex;
     flex-direction: column;
 }
 label {
@@ -52,14 +52,11 @@ input[type="text"], input[type="email"] {
     border: 1px solid #ddd;
     border-radius: 4px;
 }
-input [type="submit"]:hover {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
 input[type="submit"]:hover {
     background-color: #6da170;
+    color: white;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
 }
