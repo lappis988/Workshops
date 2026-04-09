@@ -1,0 +1,65 @@
+p {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif
+}
+body {
+    background-color: lightgrey;
+}
+h1 {
+    color: black;
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+h2 {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+}
+h3 {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.content-box {
+    padding: 20px;
+    margin: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    text-align: center;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
+form {
+    display: ruby;
+    flex-direction: column;
+}
+label {
+    font-weight: bold;
+}
+input[type="text"], input[type="email"] {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+input [type="submit"]:hover {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #6da170;
+}
