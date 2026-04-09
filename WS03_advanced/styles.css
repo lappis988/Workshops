@@ -62,3 +62,29 @@ input[type="submit"]:hover {
     border: 1px solid #ddd;
     cursor: pointer;
 }
+.transition-button {
+    background-color: lightblue;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.transition-button:hover {
+    background-color: lightcoral;
+}
+
+.animation-box {
+    width: 50px;
+    height: 50px;
+    background-color: lightpink;
+    position: relative;
+    animation: move 2s infinite alternate;
+}
+@keyframes move {
+    from {
+        left: 0;
+    }
+    to {
+        left: 100px;
+    }
+}
