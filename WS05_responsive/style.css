@@ -66,6 +66,6 @@ h1 {
 
 @media (min-width: 601px) {
     .responsive-nav .menu-toggle {
-        display: none;
+        display: block;
     }
 }
