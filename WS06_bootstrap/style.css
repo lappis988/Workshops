@@ -27,3 +27,19 @@ h1 {
 .alert {
     text-align: center;
 }
+.carousel slide {
+  height: 20px;
+}
+.container1 {
+  padding: 10px;
+  border: 1px solid grey;
+  max-width: 500px;
+  max-height: fit-content;
+  margin: auto;
+}
+.form-control {
+  padding: 10px;
+  max-width: 500px;
+  margin: auto;
+  margin-right: auto;
+}
