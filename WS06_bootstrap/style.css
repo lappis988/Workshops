@@ -1,0 +1,29 @@
+header {
+  padding: 20px;
+}
+body {
+  background-color: rgb(238, 213, 213);
+}
+h1 {
+  color: black;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+.container {
+    padding: 15px;
+    text-align: center;
+    border: 2px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.card {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn {
+    margin-bottom: 10px;
+}
+.alert {
+    text-align: center;
+}
