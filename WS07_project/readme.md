@@ -1,0 +1,1 @@
+Tämä on Workshop 7:n kansio
