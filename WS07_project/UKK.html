@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Project</title>
-    <link rel="icon" type="image/x-icon" href="./Wiltsu fitness logo-3.png">
+    <link rel="icon" type="image/x-icon" href="images/wiltsu.PNG">
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -13,12 +13,19 @@
       crossorigin="anonymous"
     />
   </head>
+  <style>
+    body {
+      background-color: rgb(234, 234, 234);
+    }
+  </style>
+
   <body>
-    <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-sm fixed-top bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand" href="./index.html">
           <img
-            src="./Wiltsu fitness logo-3.png"
+            src="images/wiltsu.PNG"
             alt="Logo"
             width="40"
             height="auto"
@@ -38,18 +45,18 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div
-          class="collapse justify-content-lg-center navbar-collapse"
+          class="collapse justify-content-sm-center navbar-collapse"
           id="navbarNavAltMarkup"
         >
           <ul class="nav nav-underline">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./index.html">Etusivu</a>
+              <a class="nav-link" href="./index.html">Etusivu</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./minuntarina.html">Minun tarina</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./UKK.html">UKK</a>
+              <a class="nav-link active" aria-current="page" href="./UKK.html">UKK</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./hae.html">Hae mukaan!</a>
@@ -58,6 +65,82 @@
         </div>
       </div>
     </nav>
+
+    <!--header-->
+    <header class="bg-body d-flex align-items-center pt-3 mt-5">
+      <section id="faq" class="py-5">
+      <div class="container">
+        <h2 class="title text-center">Usein kysytyt kysymykset</h2>
+        <div class="accordion accordion-flush" id="accordionFAQ">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="false">Miten valmennus toimii?</button>
+            </h2>
+            <div id="faq1" class="accordion-collapse" data-bs-parent="#accordionFAQ">
+              <div class="accordion-body">Saat treeniohjelmat, ruokavalion ja henkilökohtaisen tuen koko matkan ajan. Valmennus etenee vaiheittain, joten kehityt fiksusti ja ilman turhaa säätämistä. Mä oon koko ajan mukana seuraamassa ja varmistamassa, että onnistut.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false">Tarvitsenko salikortin?</button>
+            </h2>
+            <div id="faq2" class="accordion-collapse" data-bs-parent="#accordionFAQ">
+              <div class="accordion-body">Et tarvitse! Voit treenata salilla, kotona tai vaikka molemmissa. Mä teen ohjelmat sun tilanteeseen sopiviksi ja varmistetaan, että saat tuloksia riippumatta siitä, missä treenaat.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false">Mitä jos motivaatio loppuu?</button>
+            </h2>
+            <div id="faq3" class="accordion-collapse" data-bs-parent="#accordionFAQ">
+              <div class="accordion-body">Se on täysin normaalia ja just siksi mä oon täällä. Saat selkeän ohjelman, näkyviä tuloksia ja mun jatkuvan tsempin. Mä en anna sun jäädä yksin fiiliksen kanssa, vaan autan sut takaisin raiteille aina kun sitä tarvitset.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </header>
+
+    <!-- Palvelut -->
+    <section id="portfolio" class="grey py-5">
+      <div class="container">
+        <h2 class="title text-center">Palveluihini kuuluu</h2>
+        <div class="row text-center">
+          <div class="col-lg-4 col-sm-6 my-2">
+            <div class="card portfolio-card">
+              <img src="images/diet.jpg" class="portfolio-img" alt="Portfolio 1">
+              <div class="portfolio-description">
+                <h5 class="card-title">Ravinto-ohjelma</h5>
+                <p>Räätälöidään sopimaan arkeesi, käyttäen ruoka aineita josta itse pidät ja ovat sinulle mieluisia.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 my-2">
+            <div class="card portfolio-card">
+              <img src="images/plan.jpg" class="portfolio-img" alt="Portfolio 2">
+              <div class="portfolio-description">
+                <h5 class="card-title">Treeniohjelma</h5>
+                <p>Räätälöidään tavoitteiden ja taustojen pohjalta sinulle sopivaksi. Muokataan ohjeita jotta tulokset pysyvät nousussa.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 my-2">
+            <div class="card portfolio-card">
+              <img src="images/communication.jpg" class="portfolio-img" alt="Portfolio 3">
+              <div class="portfolio-description">
+                <h5 class="card-title">Check-in & Kommunikointi</h5>
+                <p>Viikottain haluan sinulta kuntokuvat, painon, mahdolliset ympärysmitat. Seurataan sinun tuntemuksia sekä kehitystä ja annan ohjeita sen pohjalta. Sinulla on oma chatti kanssani jossa vastailen sinulle arkisin.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer bg-dark text-white py-3 text-center">
+      <p class="mb-0">&copy; 2026 WiltsuFitness. All rights reserved.</p>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
