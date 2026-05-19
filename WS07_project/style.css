@@ -79,6 +79,8 @@ header {
 .btn-scale:hover {
     transform: scale(1.15);
     transition: all 0.3s ease-in-out;
+    background-color: #333 !important;
+    color: white !important;
 }
 
 .social a {
@@ -158,4 +160,9 @@ section {
     color: #333;
     font-weight: bold;
     line-height: 0.75;
+}
+.carousel {
+    max-width: 700px;
+    overflow: hidden;
+    margin: 0 auto;
 }
