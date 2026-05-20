@@ -22,7 +22,7 @@
             src="images/wiltsu.PNG"
             alt="Logo"
             width="40"
-            height="auto"
+            height="40"
             class="d-inline-block align-text-center"
           />
           Wiltsu Fitness
@@ -77,14 +77,13 @@
           <p>Aloita sun valmennus <strong>NYT!</strong><br>Tämä on sun hetki rakentaa kroppa, itsevarmuus ja rutiinit, jotka oikeasti kestää.</p>
           
           <div class="d-flex gap-3 mb-3">
-            <a href="./minuntarina.html"><button class="btn grey btn-scale">Minun tarina</button></a>
-            <a href="./hae.html"><button class="btn grey btn-scale">Hae mukaan!</button></a>
+            <a href="./minuntarina.html" class="btn grey btn-scale">Minun tarina</a>
+            <a href="./hae.html" class="btn grey btn-scale">Hae mukaan!</a>
           </div>
 
           <div class="social d-flex gap-3 mb-3">
             <a href="https://www.instagram.com/iidawilheelmina"><i class="bi bi-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/
-iida-lappalainen"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/iida-lappalainen"><i class="bi bi-linkedin"></i></a>
           </div>
           </div>
         </div>
@@ -94,6 +93,7 @@ iida-lappalainen"><i class="bi bi-linkedin"></i></a>
     <!-- yhteistyö -->
     <section id="clients" class="bg-light py-5">
       <div class="container">
+        <h2 class="sr-only">Yhteistyökumppanit</h2>
         <h3 class="title text-center" style="font-weight: normal !important;">Yhteistyössä</h3>
         <div class="d-flex flex-wrap justify-content-center gap-2">
           <img class="client-img img-fluid" src="images/logo1.PNG" alt="client 1">
@@ -139,7 +139,7 @@ iida-lappalainen"><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
             </div>
-            <a href="./minuntarina.html"><button class="btn btn-dark btn-about">Lue lisää</button></a>
+            <a href="./minuntarina.html" class="btn btn-dark btn-about">Lue lisää</a>
           </div>
         </div>
       </div>
@@ -154,6 +154,8 @@ iida-lappalainen"><i class="bi bi-linkedin"></i></a>
             <div class="card portfolio-card">
               <img src="images/diet.jpg" class="portfolio-img" alt="Portfolio 1">
               <div class="portfolio-description">
+                <h3 class="sr-only">yksi</h3>
+                <h4 class="sr-only">kaksi</h4>
                 <h5 class="card-title">Ravinto-ohjelma</h5>
                 <p>Räätälöidään sopimaan arkeesi, käyttäen ruoka aineita josta itse pidät ja ovat sinulle mieluisia.</p>
               </div>
@@ -226,10 +228,10 @@ iida-lappalainen"><i class="bi bi-linkedin"></i></a>
                 <p>Täytä alla olevat kentät, niin päästään vauhtiin.</p>
               </div>
 
-              <form action="">
+              <form>
 
                 <div class="mb-3">
-                  <label for="help" class="form-label fw-medium">Miten voimme auttaa?</label>
+                  <label for="tavoite" class="form-label fw-medium">Miten voimme auttaa?</label>
                   <select class="form-select" name="help" id="tavoite">
                     <option selected disabled>Valitse...</option>
                     <option value="">Rasvanpoltto/Kiinteytyminen</option>
@@ -240,7 +242,7 @@ iida-lappalainen"><i class="bi bi-linkedin"></i></a>
                 </div>
 
                 <div class="mb-3">
-                  <label for="help" class="form-label fw-medium">Miten määrittelet sukupuolesi?</label>
+                  <label for="sukupuoli" class="form-label fw-medium">Miten määrittelet sukupuolesi?</label>
                   <select class="form-select" name="help" id="sukupuoli">
                     <option selected disabled>Valitse...</option>
                     <option value="">Nainen</option>
@@ -250,7 +252,7 @@ iida-lappalainen"><i class="bi bi-linkedin"></i></a>
                 </div>
 
                 <div class="mb-3">
-                  <label for="help" class="form-label fw-medium">Ikä</label>
+                  <label for="ika" class="form-label fw-medium">Ikä</label>
                   <select class="form-select" name="help" id="ika">
                     <option selected disabled>Valitse...</option>
                     <option value="">16-17</option>
@@ -260,12 +262,12 @@ iida-lappalainen"><i class="bi bi-linkedin"></i></a>
                 </div>
 
                 <div class="mb-3">
-                  <label for="comments" class="form-label fw-medium">Kerro lyhyesti itsestäsi ja tavoitteestasi</label>
-                  <textarea name="comments" class="form-control rounded-3" id="kerro itsestä" rows="2" required placeholder="Pääset myöhemmin kertomaan enemmän itsestäsi"></textarea>
+                  <label for="kerro-itsestä" class="form-label fw-medium">Kerro lyhyesti itsestäsi ja tavoitteestasi</label>
+                  <textarea name="comments" class="form-control rounded-3" id="kerro-itsestä" rows="2" required placeholder="Pääset myöhemmin kertomaan enemmän itsestäsi"></textarea>
                 </div>
 
                 <div class="mb-3">
-                  <label for="comments" class="form-label fw-medium">Jos päädymme yhteistyöhön, milloin toivoisit valmennuksen alkavan?</label>
+                  <label for="toive" class="form-label fw-medium">Jos päädymme yhteistyöhön, milloin toivoisit valmennuksen alkavan?</label>
                   <textarea name="comments" class="form-control rounded-3" id="toive" rows="2" required placeholder="Pyrimme aloittamaan maanantaisin"></textarea>
                 </div>
 
@@ -273,12 +275,12 @@ iida-lappalainen"><i class="bi bi-linkedin"></i></a>
 
                 <div class="mb-0">
                   <label for="name" class="form-label fw-medium"></label>
-                  <input type="text" class="form-control rounded-3" name="name" required placeholder="Koko nimesi" id="">
+                  <input type="text" class="form-control rounded-3" name="name" required placeholder="Koko nimesi" id="name">
                 </div>
 
                 <div class="mb-3 mt-0">
                   <label for="email" class="form-label fw-medium"></label>
-                  <input type="email" class="form-control rounded-3" name="email" required placeholder="Sähköpostisi" id="">
+                  <input type="email" class="form-control rounded-3" name="email" required placeholder="Sähköpostisi" id="email">
                 </div>
 
                 <div class="d-grid">

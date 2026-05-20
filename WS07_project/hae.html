@@ -12,13 +12,14 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
-  </head>
-  <style>
+     <style>
     body {
       background: url(images/haku-bg.jpg) no-repeat center center fixed;
       background-size: cover;
     }
   </style>
+  </head>
+  
   <body>
     <!-- navbar -->
     <nav class="navbar navbar-expand-sm fixed-top bg-body-tertiary">
@@ -28,7 +29,7 @@
             src="images/wiltsu.PNG"
             alt="Logo"
             width="40"
-            height="auto"
+            height="40"
             class="d-inline-block align-text-center"
           />
           Wiltsu Fitness
@@ -76,14 +77,15 @@
 
             <div class="feedback-container my-5 rounded-4 px-5 py-4">
               <div class="feedback-header text-center mt-1 mb-3">
+                <h1 class="sr-only">Hae</h1>
                 <h2 class="fw-bold">Hae mukaan valmennukseen!</h2>
                 <p>Täytä alla olevat kentät, niin päästään vauhtiin.</p>
               </div>
 
-              <form action="">
+              <form>
 
                 <div class="mb-3">
-                  <label for="help" class="form-label fw-medium">Miten voimme auttaa?</label>
+                  <label for="tavoite" class="form-label fw-medium">Miten voimme auttaa?</label>
                   <select class="form-select" name="help" id="tavoite">
                     <option selected disabled>Valitse...</option>
                     <option value="">Rasvanpoltto/Kiinteytyminen</option>
@@ -94,7 +96,7 @@
                 </div>
 
                 <div class="mb-3">
-                  <label for="help" class="form-label fw-medium">Miten määrittelet sukupuolesi?</label>
+                  <label for="sukupuoli" class="form-label fw-medium">Miten määrittelet sukupuolesi?</label>
                   <select class="form-select" name="help" id="sukupuoli">
                     <option selected disabled>Valitse...</option>
                     <option value="">Nainen</option>
@@ -104,7 +106,7 @@
                 </div>
 
                 <div class="mb-3">
-                  <label for="help" class="form-label fw-medium">Ikä</label>
+                  <label for="ika" class="form-label fw-medium">Ikä</label>
                   <select class="form-select" name="help" id="ika">
                     <option selected disabled>Valitse...</option>
                     <option value="">16-17</option>
@@ -114,12 +116,12 @@
                 </div>
 
                 <div class="mb-3">
-                  <label for="comments" class="form-label fw-medium">Kerro lyhyesti itsestäsi ja tavoitteestasi</label>
-                  <textarea name="comments" class="form-control rounded-3" id="kerro itsestä" rows="2" required placeholder="Pääset myöhemmin kertomaan enemmän itsestäsi"></textarea>
+                  <label for="kerro-itsestä" class="form-label fw-medium">Kerro lyhyesti itsestäsi ja tavoitteestasi</label>
+                  <textarea name="comments" class="form-control rounded-3" id="kerro-itsestä" rows="2" required placeholder="Pääset myöhemmin kertomaan enemmän itsestäsi"></textarea>
                 </div>
 
                 <div class="mb-3">
-                  <label for="comments" class="form-label fw-medium">Jos päädymme yhteistyöhön, milloin toivoisit valmennuksen alkavan?</label>
+                  <label for="toive" class="form-label fw-medium">Jos päädymme yhteistyöhön, milloin toivoisit valmennuksen alkavan?</label>
                   <textarea name="comments" class="form-control rounded-3" id="toive" rows="2" required placeholder="Pyrimme aloittamaan maanantaisin"></textarea>
                 </div>
 
@@ -127,16 +129,16 @@
 
                 <div class="mb-0">
                   <label for="name" class="form-label fw-medium"></label>
-                  <input type="text" class="form-control rounded-3" name="name" required placeholder="Koko nimesi" id="">
+                  <input type="text" class="form-control rounded-3" name="name" required placeholder="Koko nimesi" id="name">
                 </div>
 
                 <div class="mb-3 mt-0">
                   <label for="email" class="form-label fw-medium"></label>
-                  <input type="email" class="form-control rounded-3" name="email" required placeholder="Sähköpostisi" id="">
+                  <input type="email" class="form-control rounded-3" name="email" required placeholder="Sähköpostisi" id="email">
                 </div>
 
                 <div class="d-grid">
-                  <button type="submit" class="btn btn-submit btn-light btn-md border-0 fw-bold">Ota minuun yhteyttä</button>
+                  <button type="submit" class="btn btn-submit btn-light btn-md border-1 fw-bold">Ota minuun yhteyttä</button>
                 </div>
               </form>
             </div>
