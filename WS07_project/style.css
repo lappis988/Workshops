@@ -100,7 +100,7 @@ section {
 }
 .client-img {
     object-fit: contain;
-    width: 120px;
+    width: 140px;
     padding: 0 2%;
 }
 
@@ -165,4 +165,5 @@ section {
     max-width: 700px;
     overflow: hidden;
     margin: 0 auto;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 }
